@@ -11,4 +11,4 @@ tech = Category.create(name: "Tech")
 jesus = Category.create(name: "Jesus")
 love = Category.create(name: "Love")
 
-Quote.create(quote: "I am invincible", author: "Shamel Lakin", tag: "tech" category_id: tech_id)
+Quote.create(quote: "I am invincible", author: "Shamel Lakin", tag: "tech", category_id: tech.id)
