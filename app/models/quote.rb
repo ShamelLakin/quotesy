@@ -1,3 +1,3 @@
 class Quote < ApplicationRecord
-    belongs_to :category
+  belongs_to :category
 end

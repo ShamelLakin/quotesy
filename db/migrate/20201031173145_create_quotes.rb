@@ -4,7 +4,7 @@ class CreateQuotes < ActiveRecord::Migration[6.0]
       t.string :quote
       t.string :author
       t.string :tag
-      t.integer :category_id
+      t.references :category, null: false, foreign_key: true
 
       t.timestamps
     end

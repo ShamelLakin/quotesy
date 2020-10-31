@@ -4,10 +4,10 @@ one:
   quote: MyString
   author: MyString
   tag: MyString
-  category_id: 1
+  category: one
 
 two:
   quote: MyString
   author: MyString
   tag: MyString
-  category_id: 1
+  category: two
