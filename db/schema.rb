@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2020_10_31_173145) do
     t.string "quote"
     t.string "author"
     t.string "tag"
-    t.bigint "category_id", null: false
+    t.bigint "category_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["category_id"], name: "index_quotes_on_category_id"

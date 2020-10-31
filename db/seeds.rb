@@ -6,9 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Category.destroy_all
+Quote.destroy_all
+
 
 tech = Category.create(name: "Tech")
 jesus = Category.create(name: "Jesus")
 love = Category.create(name: "Love")
 
 Quote.create(quote: "I am invincible", author: "Shamel Lakin", tag: "tech", category_id: tech.id)
+
