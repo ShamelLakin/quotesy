@@ -17,6 +17,6 @@ class Api::V1::QuotesController < ApplicationController
     private 
 
     def quote_params
-        params.requir(:quote).permit(:quote, :author, :tag, :category_id)
+        params.require(:quote).permit(:quote, :author, :tag, :category_id)
     end 
 end
