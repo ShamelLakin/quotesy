@@ -6,11 +6,13 @@ class Api::V1::QuotesController < ApplicationController
     end 
 
     def create 
+        # binding.pry
         quote = Quote.new(quote_params)
+        
         if quote.save
-            render json: quote, status: :accepted
+            render json: QuoteSerializer.new(quote), status: :accepted
         else
-            renedr json: {errors: quote.errors.full_messages}, status: :unprocessible_entity
+            render json: {errors: quote.errors.full_messages}, status: :unprocessible_entity
         end
     end 
 
