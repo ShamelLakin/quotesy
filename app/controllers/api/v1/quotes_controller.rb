@@ -7,7 +7,6 @@ class Api::V1::QuotesController < ApplicationController
 
     def create 
         quote = Quote.new(quote_params)
-        
         if quote.save
             render json: QuoteSerializer.new(quote), status: :accepted
         else
